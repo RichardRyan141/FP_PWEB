@@ -1,0 +1,242 @@
+body {
+    margin: 0;
+}
+
+.top-bar {
+    background-color: yellow;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.top-bar img {
+    max-width: 35px;
+    margin-right: 20px;
+}
+
+.top-bar a {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.menu-bar {
+    background-color: lightgray;
+    padding: 10px;
+    width: 200px;
+    transition: width 0.3s ease;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+}
+
+.menu-bar.collapsed {
+    width: 30px;
+}
+
+.menu-bar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-bar ul li {
+    padding: 10px;
+    transition: opacity 0.3s ease;
+}
+
+.menu-bar.collapsed ul li {
+    opacity: 0;
+}
+
+.menu-toggle {
+    display: inline-block;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+    position: relative;
+    z-index: 999;
+}
+
+.menu-toggle .bar {
+    background-color: black;
+    height: 3px;
+    margin-bottom: 6px;
+    transition: background-color 0.3s ease;
+}
+        
+.collapsed-menu-bar {
+    background-color: lightgray;
+    width: 30px;
+    transition: width 0.3s ease;
+}
+
+.collapsed-menu-bar.collapsed {
+    width: 0;
+    overflow: hidden;
+}
+
+.content {
+    margin-left: 250px;
+    padding: 10px;
+}
+
+.data-table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.data-table th,
+.data-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.data-table th {
+    background-color: #f2f2f2;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.form-container {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.form-container label,
+.form-container input {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.form-container input[readonly] {
+    background-color: #979191a2;
+}
+
+.form-container input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form-container input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.form-container .error {
+    color: red;
+}
+
+
+.review {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+  
+.review h2 {
+    margin-top: 0;
+}
+  
+.review p {
+    margin-bottom: 10px;
+}
+  
+.form-group {
+    max-width: 1000px;
+    margin-bottom: 20px;
+}
+
+
+.form-group input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form-group input[type="submit"]:hover {
+    background-color: #45a049;
+}
+.form-group input[readonly] {
+    background-color: #979191a2;
+}
+
+.label {
+    font-weight: bold;
+}
+
+.text-box {
+    width: 100%;
+    padding: 5px;
+}
+
+.menu-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.menu-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.menu-card img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.menu-card .card-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.menu-card .name {
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.menu-card .description {
+    margin-bottom: 10px;
+}
+
+.menu-card .price {
+    font-weight: bold;
+}
+
+.menu-card a {
+    margin-top: 10px;
+}
